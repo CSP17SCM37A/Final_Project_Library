@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp" tools:context=".login"
+    android:background="@mipmap/bak"
+    android:backgroundTintMode="src_atop">
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:text="Enter Student ID"
+        android:id="@+id/textView10"
+        android:layout_marginTop="180dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="#ffffffff"
+        android:textStyle="normal"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp" />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textView11"
+        android:text="A20343885"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="220dp"
+        android:textColor="#ffffffff"
+        android:gravity="center" />
+
+    <!--<Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/buttonSubmit"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:onClick="goToMainPage()"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/buttonSubmit"
+        android:textColor="#ffffffff"
+        android:textSize="20dp"
+        android:onClick="goToMainPage()"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/textView11"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:text="IIT Galvin Library"
+        android:id="@+id/textView12"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="#ffffffff"
+        android:textStyle="bold"
+        android:textSize="32dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Support"
+        android:id="@+id/support"
+        android:textColor="#ffffffff"
+        android:textSize="25dp"
+        android:onClick="goToMainPage()"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
