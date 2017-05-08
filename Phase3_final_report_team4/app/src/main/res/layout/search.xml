@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp" tools:context=".search"
+    android:background="#e92d5eee">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:text="Library Management System"
+        android:id="@+id/textView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:height="50dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:textStyle="italic"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:src="@mipmap/galvin_home" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:id="@+id/logo"
+        android:src="@mipmap/iitlogo"
+        android:layout_above="@+id/button_book"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <ImageView
+        android:layout_width="360dp"
+        android:layout_height="40dp"
+        android:id="@+id/imageView"
+        android:src="@mipmap/download"
+        android:scaleType="centerCrop"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/homeImage"
+        android:layout_alignStart="@+id/homeImage"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:id="@+id/homeImage"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@mipmap/homel"
+        android:layout_alignParentBottom="true" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:id="@+id/search"
+        android:src="@mipmap/ssss"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="80dp"
+        android:layout_alignTop="@+id/imageView" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:id="@+id/imageView4"
+        android:src="@mipmap/alarm"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="160dp"
+        android:layout_alignTop="@+id/imageView" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:id="@+id/imageView5"
+        android:src="@mipmap/notification"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="240dp"
+        android:layout_alignTop="@+id/imageView" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="25dp"
+        android:id="@+id/imageView6"
+        android:src="@mipmap/user3"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="320dp"
+        android:layout_alignTop="@+id/imageView" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/enteredText"
+        android:layout_below="@+id/textView"
+        android:gravity="center_vertical"
+        android:hint="Enter your search here" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:id="@+id/searchGo"
+        android:layout_alignTop="@+id/enteredText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/enteredText"
+        android:layout_toEndOf="@+id/enteredText"
+        android:onClick="executeSearch"/>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/results"
+        android:layout_below="@+id/enteredText"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/imageView" />
+
+
+</RelativeLayout>

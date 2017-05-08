@@ -1,0 +1,169 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp" tools:context=".book"
+    android:background="#e92d5eee">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:text="Library Management System"
+        android:id="@+id/textView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:height="50dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:textStyle="italic"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:src="@mipmap/galvin_home" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:id="@+id/logo"
+        android:src="@mipmap/iitlogo"
+        android:layout_above="@+id/button_book"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <ImageView
+        android:layout_width="360dp"
+        android:layout_height="40dp"
+        android:id="@+id/imageView"
+        android:src="@mipmap/download"
+        android:scaleType="centerCrop"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/homeImage"
+        android:layout_alignStart="@+id/homeImage"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:id="@+id/homeImage"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@mipmap/homel"
+        android:layout_alignParentBottom="true" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:id="@+id/search"
+        android:src="@mipmap/ssss"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="80dp"
+        android:layout_alignTop="@+id/imageView" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:id="@+id/imageView4"
+        android:src="@mipmap/alarm"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="160dp"
+        android:layout_alignTop="@+id/imageView" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:id="@+id/imageView5"
+        android:src="@mipmap/notification"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="240dp"
+        android:layout_alignTop="@+id/imageView" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="25dp"
+        android:id="@+id/imageView6"
+        android:src="@mipmap/user3"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="320dp"
+        android:layout_alignTop="@+id/imageView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Computer Science"
+        android:id="@+id/computerScienceButton"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="80dp"
+        android:textColor="#660010"
+        android:layout_above="@+id/imageView8"
+        android:layout_alignRight="@+id/imageView5"
+        android:layout_alignEnd="@+id/imageView5" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mechanicle"
+        android:id="@+id/button2"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="80dp"
+        android:layout_alignRight="@+id/imageView5"
+        android:layout_alignEnd="@+id/imageView5"
+        android:textColor="#660010"
+        android:layout_above="@+id/imageView9" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chemical"
+        android:id="@+id/button3"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="190dp"
+        android:layout_marginLeft="80dp"
+        android:layout_alignRight="@+id/imageView5"
+        android:layout_alignEnd="@+id/imageView5"
+        android:textColor="#660010"
+        android:layout_above="@+id/imageView10" />
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Electrical"
+        android:id="@+id/button4"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="260dp"
+        android:layout_marginLeft="80dp"
+        android:layout_alignRight="@+id/imageView5"
+        android:layout_alignEnd="@+id/imageView5"
+        android:textColor="#660010"
+        android:layout_above="@+id/imageView11" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medical"
+        android:id="@+id/button5"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="330dp"
+        android:layout_marginLeft="80dp"
+        android:layout_alignRight="@+id/imageView5"
+        android:layout_alignEnd="@+id/imageView5"
+        android:textColor="#660010" />
+
+</RelativeLayout>
